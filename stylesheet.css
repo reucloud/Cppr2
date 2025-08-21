@@ -24,3 +24,12 @@ ul {
   padding: auto;
   margin-left: 20px;
 }
+
+.about h2,
+.works h2,
+.news h2,
+.contact h2 {
+  margin-top: 80px;
+  margin-bottom: 50px;
+  text-align: center;
+}
