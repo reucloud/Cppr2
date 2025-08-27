@@ -21,7 +21,7 @@ ul {
 }
 
 .right {
-  padding: auto;
+  /* padding: auto; */
   margin-left: 20px;
 }
 
@@ -32,4 +32,84 @@ ul {
   margin-top: 80px;
   margin-bottom: 50px;
   text-align: center;
+}
+.work-contents {
+  display: flex;
+  flex-wrap: wrap;
+}
+.work-contents img {
+  /* margin: 5px; */
+  width: 33%;
+}
+
+.contact {
+  padding-bottom: 20px;
+}
+
+.news .contents {
+  display: flex;
+  align-items: center;
+}
+.news .date {
+  padding-right: 50px;
+  width: 100px;
+}
+.news .sentence {
+}
+.border {
+  border: 0.5px solid gray;
+}
+
+.contact .contents {
+  display: flex;
+  align-items: center; /* 縦方向中央揃え */
+  margin-bottom: 20px; /* 下のスペース */
+}
+
+.contact .contents p {
+  font-size: 20px;
+  width: 150px; /* ラベルの幅を固定 */
+  margin: 0;
+  flex-shrink: 0; /*幅を固定して縮まないようにする*/
+}
+
+.contact .contents div {
+  flex: 1; /* 右側入力欄が残りの幅いっぱいに広がる */
+}
+
+.contact .contents input {
+  height: 100px;
+  width: 100%;
+}
+
+.contact .contents input,
+.contact .contents textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  height: 50px;
+  box-sizing: border-box; /* パディング込みで幅を計算 */
+}
+
+.contact .contents textarea {
+  height: 150px;
+}
+.contact input[type="submit"] {
+  display: block; /* ブロック要素に変更 */
+  margin: 20px auto; /* 上下20px、左右自動で中央 */
+  padding: 10px 30px; /* 好みに合わせて調整 */
+  font-size: 25px;
+  cursor: pointer;
+  height: 80px;
+  width: 300px;
+  background-color: black;
+  color: white;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
 }
