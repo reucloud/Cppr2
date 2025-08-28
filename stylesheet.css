@@ -1,3 +1,13 @@
+header,
+.about,
+.works,
+.news,
+.contact {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 4%;
+}
+
 .header {
   color: inherit; /* テキスト色を親要素に合わせる */
   text-decoration: none; /* 下線を消す */
@@ -6,8 +16,12 @@
 
 ul {
   display: flex; /*横並びにする*/
+  justify-content: space-between; /* 左右に分ける */
   align-items: center; /*縦を揃える*/
   list-style: none;
+  height: 270px;
+  margin: 0;
+  padding: 0;
 }
 
 .header {
@@ -18,11 +32,17 @@ ul {
 .left {
   font-size: 30px;
   margin-right: auto;
+  text-align: left;
 }
 
 .right {
   /* padding: auto; */
   margin-left: 20px;
+  text-align: right;
+}
+
+main img {
+  width: 100%;
 }
 
 .about h2,
@@ -38,8 +58,8 @@ ul {
   flex-wrap: wrap;
 }
 .work-contents img {
-  /* margin: 5px; */
-  width: 33%;
+  padding: 15px;
+  width: 29%;
 }
 
 .contact {
@@ -54,8 +74,7 @@ ul {
   padding-right: 50px;
   width: 100px;
 }
-.news .sentence {
-}
+
 .border {
   border: 0.5px solid gray;
 }
